@@ -1,0 +1,16 @@
+.app__taskBox_task {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: 70px;
+    background: $secondary-color;
+    padding-left: 30px;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 4px 31px 0px rgba(0,0,0,0.75);
+
+    &::placeholder {
+        color: black;
+    }
+}
