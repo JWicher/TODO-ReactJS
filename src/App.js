@@ -8,7 +8,7 @@ class App extends Component {
     tasks: [],
     buttons: [
       {label: "Add", type: "primary",action: () => this.handleAddTask()},
-      {label: "Remove", type: "danger", action: task => this.handleRemoveTask(task)},
+      {label: "Remove", type: "danger", action: () => this.handleRemoveTask()},
       {label: "Clear", type: "secondary", action: () => this.handleClearTasksBox()}
     ]
   }
@@ -39,6 +39,7 @@ class App extends Component {
   };
 
   render() {
+    document.title = "To-Do J.W.";
     const { tasks, buttons } = this.state;
 
     return (
